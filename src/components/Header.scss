@@ -1,0 +1,47 @@
+.bokningssida-header {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header-items {
+        margin-top: 1rem;
+    }
+
+    .calendar-input-field {
+        height: fit-content;
+        /*  */
+        margin-left: 1rem;
+    }
+
+    #bokningssida-flatpickr-datum {
+        margin-left: 2rem;
+    }
+
+    .flatpickr-item {
+        flex-grow: 2;
+        margin-top: 2rem;
+    }
+
+    .logo {
+        margin-left: 22rem;
+    }
+
+    #shoppingcart-popover {
+        position: fixed;
+        margin-left: 74vw;
+        margin-top: 7vh;
+    }
+
+    .boka-button {
+        height: 3rem;
+        margin-left: 5rem;
+        margin-right: 20rem;
+    }
+}
+
+.total-price {
+    flex-grow: 1;
+    padding-top: 1rem;
+}
+

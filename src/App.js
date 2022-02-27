@@ -1,14 +1,13 @@
-import './App.css';
+import './App.scss';
 import Header from './components/Header'
+import MainContainer from './components/MainContainer'
 import Footer from './components/Footer'
-import Datepicker from './components/Datepicker';
 
 function App() {
   return (
     <div className="App">
       <Header id='bokningssida-main-header' />
-      <div id='bokningssida-main-body'>
-      </div>
+      <MainContainer />
       <Footer id='bokningssida-main-footer' />
     </div>
   );

@@ -1,12 +1,13 @@
 import Flatpickr from 'react-flatpickr'
 import 'flatpickr/dist/themes/airbnb.css'
+import './DatepickerContainer.scss'
 
 const Datepicker = () => {
 
     return (
         <>
-        <Flatpickr 
-            id='bokningssida-flatpickr' 
+        {/* <Flatpickr 
+            id='bokningssida-flatpickr-datum' 
             options={{ 
                 altInput: 'true', 
                 mode: 'range', 
@@ -16,32 +17,37 @@ const Datepicker = () => {
                 defaultDate: 'today',
                 weekNumbers: true,
                 inline: true 
-            }} />
+            }} /> */}
+            <span className='timepicker-container'>
+                <span id='span-hamtas' >Hämtas: 
         <Flatpickr 
-            id='bokningssida-flatpickr-starttid' 
+            id='bokningssida-flatpickr-starttid'
             options={{
                 enableTime: true,
                 noCalendar: true,
-                dateFormat: "H:i",
+                dateFormat: 'H:i',
                 time_24hr: true,
-                minTime: "09:00",
-                maxTime: "20:00",
-                defaultDate: "12:00",
-                inline: true 
-        }} />
-        <Flatpickr 
-            id='bokningssida-flatpickr-sluttid' 
-            options={{
-                enableTime: true,
-                noCalendar: true,
-                dateFormat: "H:i",
-                time_24hr: true,
-                minTime: "09:00",
-                maxTime: "20:00",
-                defaultDate: "11:00",
+                minTime: '09:00',
+                maxTime: '20:00',
+                defaultDate: '12:00',
                 inline: true,
-                disabled: true
         }} />
+        </span>
+        <span id='span-lamnas'>Lämnas: 
+        <Flatpickr 
+            id='bokningssida-flatpickr-sluttid'
+            options={{
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: 'H:i',
+                time_24hr: true,
+                minTime: '09:00',
+                maxTime: '20:00',
+                defaultDate: '11:00',
+                inline: true,
+        }} />
+        </span>
+        </span>
         </>
     )
 }
