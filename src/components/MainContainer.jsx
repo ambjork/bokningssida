@@ -32,7 +32,7 @@ function MainContainer () {
                     <Typography 
                         gutterBottom variant='h5' 
                         component='div'>
-                            Paket 1
+                            Paket
                     </Typography>
                     <Typography 
                         variant='body2' 
