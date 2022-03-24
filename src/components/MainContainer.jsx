@@ -1,5 +1,4 @@
 import React from 'react'
-import DatepickerContainer from './DatepickerContainer'
 import { Container, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material'
 import './MainContainer.scss'
 
@@ -17,8 +16,6 @@ function MainContainer () {
     
     return (
         <Container id='bokningssida-main-container'> 
-            {/* <img src='pexels-dids-1644616.jpg' width='500' height='600'/> */}
-            {/* <DatepickerContainer /> */}
 
             <section className='cards'>
             <Card className='card' sx={{ maxWidth: 345 }}>
